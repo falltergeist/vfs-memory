@@ -25,7 +25,7 @@ if(NOT TARGET falltergeist::vfs)
 endif()
 
 add_library(${PROJECT_NAME} STATIC)
-add_library(falltergeist::vfs::native ALIAS ${PROJECT_NAME})
+add_library(falltergeist::vfs::memory ALIAS ${PROJECT_NAME})
 
 target_sources(${PROJECT_NAME}
     PRIVATE
